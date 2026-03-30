@@ -52,9 +52,11 @@ import Layout from "../layouts/Layout.astro";
 		align-items: center;
 		justify-content: space-between;
 		background-color: $secondary;
+		width: 100%;
+		padding: 0 5%;
 
 		img {
-			width: 50%;
+			width: 150px;
 			height: auto;
 		}
 		i {
@@ -195,6 +197,32 @@ import Layout from "../layouts/Layout.astro";
 			font-size: 0.8rem;
 			color: $secondary;
 		}
+	}
+
+	@media (min-width: 1024px) {
+	.content-product {
+		background-image: url("/header.png");
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		width: 100%;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
+		text-align: left;
+
+		h1 {
+			width: 30%;
+		}
+	}
+
+		.content-row {
+		img {
+			width: 180px;
+		}
+	}
 	}
 
 </style>
