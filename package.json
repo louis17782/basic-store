@@ -12,7 +12,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^6.1.1"
+    "astro": "^6.1.1",
+    "sass": "^1.98.0"
   },
   "description": "```sh npm create astro@latest -- --template basics ```",
   "main": "index.js",
