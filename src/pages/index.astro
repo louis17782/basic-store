@@ -9,24 +9,74 @@ import Layout from "../layouts/Layout.astro";
 			<i class="ph ph-shopping-cart"></i>
 		</div>
 		<div class="content-product"> 
-			<h1>Eat Healthy, Fresh and Nutritious</h1>
 			<a href="#">shop now</a>
 		</div>
 	</header>
 	<figure>
 		<h2>Our Products</h2>
 		<div class="content-block">
-			<img src="/product.jpg" alt="#">
-			<img src="/product.jpg" alt="#">
-			<img src="/product.jpg" alt="#">
+			<img src="/pro1.jpg" alt="#">
+			<img src="/pro2.jpg" alt="#">
+			<img src="/pro6.jpg" alt="#">
 		</div>
 	</figure>
-	<div class="content">
-		<img src="/product.jpg" alt="Product Image">
-			<h3>Fresh Veggies</h3>
-			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
-			<p>$100</p>
-			<a href="">Add to Cart</a>
+	<div class="content-gap"> 
+		<div class="content">
+			<img src="/pro9.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
+		<div class="content">
+			<img src="/pro8.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
+		<div class="content">
+			<img src="/pro3.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
+		<div class="content">
+			<img src="/pro6.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
+		<div class="content">
+			<img src="/pro5.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
+		<div class="content">
+			<img src="/pro4.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
+			<div class="content">
+			<img src="/pro1.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
+			<div class="content">
+			<img src="/pro2.jpg" alt="Product Image">
+				<h3>Fresh Veggies</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, voluptate.</p>
+				<p>$100</p>
+				<a href="">Shop now</a>
+		</div>
 	</div>
 	<footer>
 		<img src="/logo.png" alt="logo">
@@ -65,8 +115,17 @@ import Layout from "../layouts/Layout.astro";
 		}
 	}
 
+  .content-gap {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 20px;
+		justify-items: center; 
+		justify-content: center;
+		padding: 2rem 5%;
+	}
+
 	.content-product {
-		background-image: url("/product2.png");
+		background-image: url("/pro7.jpg");
 		background-size: cover;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -74,7 +133,7 @@ import Layout from "../layouts/Layout.astro";
 		height: 400px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
+		justify-content: flex-end;
 		gap: 1rem;
 		text-align: left;
 
@@ -89,7 +148,7 @@ import Layout from "../layouts/Layout.astro";
 			border-radius: 5px;
 			font-weight: $bold;
 			width: fit-content;
-			margin: 0 5%;
+			margin: 50px 5%;
 		}
 	}
 
@@ -113,7 +172,7 @@ import Layout from "../layouts/Layout.astro";
 			height: auto;
 			border-radius: 100px;
 			background-color: white;
-			padding: 10px;
+			padding: 5px;
 		}
 	}
 
@@ -201,26 +260,24 @@ import Layout from "../layouts/Layout.astro";
 
 	@media (min-width: 1024px) {
 	.content-product {
-		background-image: url("/header.png");
-		background-size: contain;
-		background-position: center;
+		background-image: url("/header.jpg");
+		background-size: cover;
+		background-position: center center;
 		background-repeat: no-repeat;
 		width: 100%;
 		height: 500px;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		gap: 1rem;
-		text-align: left;
-
-		h1 {
-			width: 30%;
-		}
 	}
 
 		.content-row {
 		img {
 			width: 180px;
+		}
+	}
+
+	
+	.content-block {
+		img {
+			width: 170px;
 		}
 	}
 	}
